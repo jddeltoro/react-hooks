@@ -44,7 +44,7 @@ const ReducerTutorial = () => {
   return (
     <div className="card">
       <div className="card-body">
-        <h5 class="card-title">Reducer Component</h5>
+        <h5 className="card-title">Reducer Component</h5>
         <h1>{state.count}</h1>
         <button className="btn btn-primary"
           onClick={() => {
@@ -55,12 +55,12 @@ const ReducerTutorial = () => {
           Click Here
         </button>
         {state.showText && <p>This is a text</p>}
-        <ul class="list-group">
-          <li class="list-group-item">hp {hero_stats.hp}</li>
-          <li class="list-group-item">stamina {hero_stats.stamina}</li>
-          <li class="list-group-item">strength {hero_stats.strength}</li>
-          <li class="list-group-item">agility {hero_stats.agility}</li>
-          <li class="list-group-item">intelligence {hero_stats.intelligence}</li>
+        <ul className="list-group">
+          <li className="list-group-item">hp {hero_stats.hp}</li>
+          <li className="list-group-item">stamina {hero_stats.stamina}</li>
+          <li className="list-group-item">strength {hero_stats.strength}</li>
+          <li className="list-group-item">agility {hero_stats.agility}</li>
+          <li className="list-group-item">intelligence {hero_stats.intelligence}</li>
         </ul>
         <button className="btn btn-success" onClick={() => {setHeroStats({type:"INIT_HERO"})}}>Init Hero</button>
         <button className="btn btn-danger" onClick={() => {setHeroStats({type:"APPLY_DAMAGE"})}}>Apply Damage</button>
