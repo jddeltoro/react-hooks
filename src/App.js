@@ -7,11 +7,12 @@ import ImperativeHandle from "./UseImperativeHandle/ImperativeHandle";
 import RefTutorial from "./UseRef/RefTutorial";
 import MemoTutorial from "./UseMemo/MemoTutorial";
 import CallBackTutorial from "./UseCallback/CallbackTutorial";
+import LayoutEffectTutorial from "./UseLayoutEffect/LayoutEffectTutorial";
 
 function App() {
   return (
     <div className="App">
-      <div className="container">
+      <div className="container-fluid">
         <div className="row">
           <div className="col">
             <StateTutorial />
@@ -19,7 +20,25 @@ function App() {
           <div className="col">
             <ReducerTutorial />
           </div>
-        </div>  
+          <div className="col">
+            <EffectTutorial />
+          </div>
+          <div className="col">
+            <RefTutorial />
+          </div>
+        </div>
+        <div className="row">
+          <div className="col">
+            <LayoutEffectTutorial />
+          </div>
+          <div className="col">
+            <ImperativeHandle />
+          </div>
+          <div className="col">
+            <ContextTutorial />
+          </div>
+          <div className="col"></div>
+        </div>
       </div>
     </div>
   );
