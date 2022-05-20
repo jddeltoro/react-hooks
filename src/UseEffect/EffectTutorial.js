@@ -9,7 +9,8 @@ function EffectTutorial() {
     axios
       .get("https://jsonplaceholder.typicode.com/comments")
       .then((response) => {
-        setData(response.data[0].email);
+        console.info("elements", response.data.length);
+        setData(response.data[Math.floor(Math.random() * 500)+1 ].email);
         console.log("API WAS CALLED");
       });
   }, []);
