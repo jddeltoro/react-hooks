@@ -10,7 +10,7 @@ function EffectTutorial() {
       .get("https://jsonplaceholder.typicode.com/comments")
       .then((response) => {
         console.info("elements", response.data.length);
-        setData(response.data[Math.floor(Math.random() * 500)+1 ].email);
+        setData(response.data[Math.floor(Math.random() * response.data.length)+1 ].email);
         console.log("API WAS CALLED");
       });
   }, []);
