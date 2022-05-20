@@ -5,6 +5,7 @@ function RefTutorial() {
 
   const onClick = () => {
     inputRef.current.value = "";
+    inputRef.current.focus();
   };
   return (
     <div>
