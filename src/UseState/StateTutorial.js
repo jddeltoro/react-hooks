@@ -12,7 +12,7 @@ const StateTutorial = () => {
   return (
     <div className="card">
       <div className="card-body">
-        <h5 class="card-title">State Component</h5>
+        <h5 className="card-title">State Component</h5>
         <div>
           <input placeholder="enter something..." onChange={updateUiInformation} />
           {inputValue}
